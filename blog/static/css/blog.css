@@ -1,5 +1,6 @@
 .page-header h1 a{
-	color:#FFFFFF;
+	color:#33497E;
+	text-align: center;
 }
 
 h1 a {
@@ -10,7 +11,7 @@ body {
     padding-left: 15px;
 }
 .page-header{
-	background-color: #009900;
+	background-color: #E7E7E7;
 	margin-top:0;
 	padding: 20px 20px 20px 40px;
 }
@@ -58,4 +59,9 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
+    width: 1000px;
+}
+.img{
+	width: 10px;
+	size: 10px;
 }
