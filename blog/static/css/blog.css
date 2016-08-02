@@ -1,17 +1,17 @@
-.page-header h1 a{
+.page-header h1 a {
 	color:#33497E;
-	text-align: center;
+	margin-left:20px;
 }
 
-h1 a {
-    color: #009933;
+.post h1 a {
+    color: #33494E ;
     font-family: 'Audiowide', cursive;
 }
 body {
     padding-left: 15px;
 }
 .page-header{
-	background-color: #E7E7E7;
+	background-color: white;
 	margin-top:0;
 	padding: 20px 20px 20px 40px;
 }
@@ -21,7 +21,8 @@ body {
 	text-decoration: none;
 }
 .content{
-	margin-left:40px;
+	margin-left:250px;
+	background-color: white;
 }
 h1, h2, h3, h4{
 	font-family: 'Audiowide', cursive;
@@ -59,9 +60,13 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-    width: 1000px;
+    width: 750px;
+
 }
-.img{
-	width: 10px;
-	size: 10px;
+img{
+	width: 60px;
+	height: 60px;
+}
+h1, #post_title{
+	color: #33497E;
 }
