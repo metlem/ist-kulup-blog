@@ -9,8 +9,17 @@
                 {{ post.published_date }}
             </div>
             <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}" target="_blank" id="post_title">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-            <a href="{% url 'blog.views.post_detail' pk=post.pk %}" target="blank" id="Comments">Comments: {{ post.comments.count }} </a>
+
+         
+            <div class = "post_body">
+                
+                {{ post.text|safe|truncatewords:"50"|linebreaks }}
+
+                <a id="daha_fazlasini_oku" href="{% url 'post_detail' pk=post.pk %}">Daha Fazlasını Oku</a>
+            </div>   
+
+
+            <p><a href="{% url 'blog.views.post_detail' pk=post.pk %}" target="blank" id="Comments">Comments: {{ post.comments.count }} </a></p>
             <hr>
         </div>
     {% endfor %}
